@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Анна Михайлова</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/b84858b84d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="img/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Главная</a></li>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#contact">Контакты</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openemenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Фронтенд веб-разработчица</p>
+          <h1>Привет, я <span>Аня</span> Михайлова</h1>
+        </div>
+      </div>
+    </div>
+
+    <!---------about--------->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/user.png" alt="Just a nice pic of mine" />
+          </div>
+          <div class="about-col-2">
+            <h2 class="subtitle">Обо мне</h2>
+            <p>
+              Мне 22 года, проживаю в г. Санкт-Петербурге. С самого детства меня
+              преследовало желание с нуля создавать что-то своё. Фронтенд даёт
+              мне возможность в полной мере реализовать свой творческий
+              потенциал, а мой опыт обучения на факультете международных
+              отношений и преподавания подарил мне навык быстрого поиска решений
+              для разного рода проблем.
+            </p>
+            <!-- I'm a 22 years old self-taught developer located in Saint
+              Petersburg, Russia. I have always had a great desire to create
+              something by myself. Now I feel like a found a perfect way, as
+              code helps me show both my quirkiness and creativity. -->
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Навыки
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">Опыт</p>
+              <p class="tab-links" onclick="opentab('education')">
+                Образование
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Фронтенд веб-разработка</span><br />Создание
+                  функциональных, интерактивных и привлекательных веб-сайтов и
+                  приложений
+                </li>
+                <!-- <li>
+                  <span>Front-end web development</span><br />Taking care of
+                  websites' appearance and interactivity
+                </li> -->
+                <li>
+                  <span>Письменный и устный перевод</span><br />Свободно владею
+                  тремя языками: русским, английским и китайским (также обладаю
+                  навыками перевода технической документации)
+                </li>
+                <!-- <li>
+                  <span>Written and oral translation</span><br />Doing
+                  translations using three languages: Russian, English and
+                  Chinese (including technical documentation)
+                </li> -->
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Январь 2023 – настоящее время</span><br />Фриланс
+                  фронтенд-разработчица. Создаю адаптивные веб-сайты и
+                  веб-приложения с использованием HTML5/CSS3 и Javascript ES6.
+                </li>
+                <li>
+                  <span>2022 – настоящее время</span><br />Переводчица с
+                  английского и китайского. Перевожу техническую документацию к
+                  судовым дизельным двигателям для компании Морские
+                  автоматизированные системы.
+                </li>
+                <!-- <li>
+                  <span>2022 - Current</span><br />Translating diesel engines
+                  documentation for Marine automated systems from Chinese into
+                  Russian
+                </li> -->
+                <li>
+                  <span>Май 2022 - настоящее время</span><br />Художественная
+                  переводчица с китайского. Перевод детской литературы и
+                  написание рецензий в сотрудничестве с Музеем уникальных вещиц.
+                </li>
+                <!-- <li>
+                  <span>2022 - Current</span><br />Translating and writing
+                  reviews for Chinese children's books in cooperation with the
+                  Museum of unique things
+                </li> -->
+                <li>
+                  <span>Июнь 2022 - январь 2023</span><br />Преподаватель
+                  английского языка в Skyeng. Работа с взрослыми учениками
+                  (департамент Adults). Ведение занятий по бизнес-английскому.
+                </li>
+                <!-- <li>
+                  <span>Jun 2022 - Jan 2023</span><br />English teacher in the
+                  Skyeng adult department
+                </li> -->
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023</span><br />Udemy: The Complete JavaScript Course
+                  2023: From Zero to Expert
+                </li>
+                <li>
+                  <span>2022</span><br />Skillbox: профессия веб-разработчик
+                </li>
+                <li>
+                  <span>2018-2022</span><br />Санкт-Петербургский
+                  государственный университет, факультет международных
+                  отношений. Степень бакалавра.
+                </li>
+                <!-- <li>
+                  <span>2023</span><br />Udemy: The Complete JavaScript Course
+                  2023: From Zero to Expert
+                </li>
+                <li>
+                  <span>2022</span><br />Skillbox: Web developer profession
+                </li>
+                <li>
+                  <span>2018-2022</span><br />Bachelor of International
+                  relations, Saint Petersburg State University
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------services------>
+    <div id="services">
+      <div class="container">
+        <h2 class="subtitle">Мои услуги</h2>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Веб-разработка</h3>
+            <p>
+              Разработка пользовательских интерфейсов с использованием
+              HTML5/CSS3 и Javascript ES6.
+            </p>
+            <!-- <h3>Web development</h3>
+            <p>
+              Development of the graphical user interface of a website, through
+              the use of HTML, CSS, and JavaScript
+            </p> -->
+            <!----- a href="#">Learn more</a --->
+          </div>
+          <div>
+            <i class="fa-solid fa-pen"></i>
+            <h3>Веб-дизайн</h3>
+            <p>Создание эстетически привлекательных веб-сайтов.</p>
+            <!-- <h3>Web design</h3>
+            <p>Creating aesthetically pleasing websites</p> -->
+            <!----- a href="#">Learn more</a --->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----portfolio------->
+    <div id="portfolio">
+      <div class="container">
+        <h2 class="subtitle">Некоторые из моих проектов</h2>
+
+        <div class="projects_container">
+          <a href="https://mishaann.github.io/minesweeper-game/">
+            <div class="project-preview">
+              <img
+                src="./projects/minesweeper.jpg"
+                alt="minesweeper screenshot"
+              />
+              <p>Игра "сапёр"</p>
+            </div></a
+          >
+          <a href="https://mishaann.github.io/mapty/">
+            <div class="project-preview">
+              <img src="./projects/mapty.jpg" alt="mapty screenshot" />
+              <p>Mapty - приложение для отслеживания тренировок и их локаций</p>
+            </div></a
+          >
+          <a href="https://mishaann.github.io/pig_game/">
+            <div class="project-preview">
+              <img src="./projects/pig_game.jpg" alt="pig game screenshot" />
+              <p>
+                Pig - простая игра для двоих. Используется одна игральная кость
+              </p>
+            </div></a
+          >
+          <a href="https://mishaann.github.io/notes_app/">
+            <div class="project-preview">
+              <img src="./projects/notesapp.jpg" alt="notes app screenshot" />
+              <p>Приложение для создания и отображения заметок</p>
+            </div></a
+          >
+        </div>
+
+        <!-- <div class="cv-container">
+          <button
+            id="cv-button"
+            type="submit"
+            onclick="window.open('резюме.pdf')"
+          >
+            Click here to download my CV
+          </button>
+        </div> -->
+      </div>
+    </div>
+
+    <!------------contacts--------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h2 class="subtitle">Контакты</h2>
+            <p>
+              <i class="fa-regular fa-envelope"></i>anyamikhaylova@gmail.com
+            </p>
+
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/%D0%B0%D0%BD%D0%BD%D0%B0-%D0%BC%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B0-bb8209266"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="https://instagram.com/misshaann?igshid=ZDdkNTZiNTM="
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://t.me/mishaann"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="name" placeholder="Ваше имя" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Ваш email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Ваше сообщение"
+              ></textarea>
+              <button type="submit" class="btn btn2">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          © Анна Михайлова
+          <i class="fa-sharp fa-regular fa-heart"></i>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
