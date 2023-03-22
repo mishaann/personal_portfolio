@@ -211,6 +211,7 @@ nav ul li a:hover::after {
 }
 .project-preview p {
   width: 95%;
+  margin: 0 7px;
 }
 
 .projects_container div:hover {
