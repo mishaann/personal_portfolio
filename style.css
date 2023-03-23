@@ -396,6 +396,9 @@ nav .fa-solid {
     flex-direction: column;
   }
   #contact {
-    margin-top: 850px;
+    margin-top: 870px;
+  }
+  .projects_container a {
+    margin-top: 10px;
   }
 }
