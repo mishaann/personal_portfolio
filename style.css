@@ -389,4 +389,13 @@ nav .fa-solid {
   .copyright {
     font-size: 14px;
   }
+  #portfolio .container {
+    margin-top: 120px;
+  }
+  .projects_container {
+    flex-direction: column;
+  }
+  #contact {
+    margin-top: 850px;
+  }
 }
